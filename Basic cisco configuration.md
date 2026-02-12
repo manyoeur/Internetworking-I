@@ -41,6 +41,8 @@ SW1(config-if)# exit
 ```
 SW1(config)# interface fastEthernet0/1
 SW1(config-if)# switchport mode access
+SW1(config-if)# switchport access vlan 10
+SW1(config-if)# exit
 ```
 ## 10. Configure Remote Management (Telnet + SSH)
 ### A. Enable Telnet (Not secure, used only for beginner labs)
@@ -81,5 +83,3 @@ or
 SW1# copy running-config startup-config
 ```
 
-SW1(config-if)# switchport access vlan 10
-SW1(config-if)# exit
