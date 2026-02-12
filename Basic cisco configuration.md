@@ -82,4 +82,12 @@ or
 ```
 SW1# copy running-config startup-config
 ```
+### 12 To verify configuration
+```
+SW1#show running-config
+```
+### 13 To display IP interface configuration
+```
+SW1#show ip interface brief
+```
 
