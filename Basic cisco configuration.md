@@ -1,17 +1,17 @@
 # Basic Cisco switch configuration
-## 1. Enter Privileged Mode
+## 1️⃣ Enter Privileged Mode
 ```
 Switch> enable
 ```
-## 2. Enter Global Configuration Mode
+## 2️⃣ Enter Global Configuration Mode
 ```
 Switch# configure terminal
 ```
-## 3. Change the Hostname
+## 3️⃣ Change the Hostname
 ```
 Switch(config)# hostname SW1
 ```
-## 4. Set Console Password
+## 4️⃣ Set Console Password
 ```
 
 SW1(config)# line console 0
@@ -19,32 +19,32 @@ SW1(config-line)# password cisco123
 SW1(config-line)# login
 SW1(config-line)# exit
 ```
-## 5. Set Enable (Privilege Mode) Password
+## 5️⃣ Set Enable (Privilege Mode) Password
 ```
 SW1(config)# enable secret admin123
 ```
-## 6. Create Management VLAN (Example: VLAN 10)
+## 6️⃣ Create Management VLAN (Example: VLAN 10)
 ```
 
 SW1(config)# vlan 1
 SW1(config-vlan)# name MANAGEMENT
 SW1(config-vlan)# exit
 ```
-## 7. Configure VLAN Interface IP (SVI)
+## 7️⃣ Configure VLAN Interface IP (SVI)
 ```
 SW1(config)# interface vlan 1
 SW1(config-if)# ip address 192.168.10.1 255.255.255.0
 SW1(config-if)# no shutdown
 SW1(config-if)# exit
 ```
-## 8. Assign Management VLAN to Access Ports
+## 8️⃣ Assign Management VLAN to Access Ports
 ```
 SW1(config)# interface fastEthernet0/1
 SW1(config-if)# switchport mode access
 SW1(config-if)# switchport access vlan 10
 SW1(config-if)# exit
 ```
-## 10. Configure Remote Management (Telnet + SSH)
+## 9️⃣ Configure Remote Management (Telnet + SSH)
 ### A. Enable Telnet (Not secure, used only for beginner labs)
 ```
 SW1(config)# line vty 0 4
@@ -74,7 +74,7 @@ SW1(config-line)# transport input ssh telnet
 SW1(config-line)# login local
 SW1(config-line)# exit
 ```
-### 11. Save Configuration
+### 🔟 Save Configuration
 ```
 SW1# write memory
 ```
@@ -82,11 +82,11 @@ or
 ```
 SW1# copy running-config startup-config
 ```
-### 12 To verify configuration
+### 11 To verify configuration
 ```
 SW1#show running-config
 ```
-### 13 To display IP interface configuration
+### 12 To display IP interface configuration
 ```
 SW1#show ip interface brief
 ```
