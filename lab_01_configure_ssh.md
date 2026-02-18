@@ -1,4 +1,6 @@
 # How to Configure SSH on a Cisco Switch
+<img width="1003" height="632" alt="image" src="https://github.com/user-attachments/assets/10432297-f9c9-40b4-b5eb-7c5c5c835511" />
+
 ## 1️⃣ Set a Hostname
 ```
 Switch(config)# hostname SW1
