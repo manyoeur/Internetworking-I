@@ -42,5 +42,5 @@ SW1(config)# ip default-gateway 192.168.1.1
 ```
 ✅ Test SSH From PC
 ```
-ssh admin@192.168.1.10
+ssh -l admin 192.168.1.10
 ```
