@@ -35,7 +35,7 @@ SW1(config)# ip ssh version 2
 ## 8️⃣ Assign an IP Address to a VLAN Interface
 ```
 SW1(config)# interface vlan 1
-SW1(config-if)# ip address 192.168.1.10 255.255.255.0
+SW1(config-if)# ip address 192.168.1.1 255.255.255.0
 SW1(config-if)# no shutdown
 ```
 ## 9️⃣ Add Default Gateway (If needed)
