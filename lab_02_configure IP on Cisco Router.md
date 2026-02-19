@@ -1,6 +1,5 @@
 # How to configure IP on Cisco Router
 <img width="1003" height="716" alt="image" src="https://github.com/user-attachments/assets/cc7b3cbe-ea5b-49bc-8e7a-b5598978b366" />
-<img width="1003" height="716" alt="image" src="https://github.com/user-attachments/assets/cc7b3cbe-ea5b-49bc-8e7a-b5598978b366" />
 
 ## Step 1: Enter Privileged EXEC Mode
 ```
